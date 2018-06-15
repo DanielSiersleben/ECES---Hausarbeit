@@ -1,0 +1,41 @@
+\documentclass[12pt,accentcolor=tud2c, colorback, bigchapter]{tudreport}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[ngerman]{babel}
+\usepackage{hyperref}
+\usepackage{geometry}
+\graphicspath{{bilder/}}
+\setinstitutionlogo{celogo}
+
+\title{Titel der Hausarbeit}
+\subtitle{Hausarbeit von Erika Mustermann und Max Mustermann}
+\subsubtitle{Erfolgreich CE Studieren II - SoSe 2018\\Abgabedatum: 01.07.2018}
+
+%Beginn des Dokuments
+\begin{document}
+\maketitle
+\cleardoublepage
+\setcounter{page}{1}
+\pagenumbering{roman}
+\include{eid} 
+\include{abstract}
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+% Eigentlicher Text mit arabischen Seitenzahlen
+%\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+%einzelne Kapitel
+\include{chapter1}
+\include{chapter2}
+%Literaturverzeichnis
+%\bibliographystyle{plaindin}
+\bibliographystyle{alphadin}
+\bibliography{literatur}
+%Appendix
+\appendix
+\include{anhang}
+\end{document}
